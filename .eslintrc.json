@@ -42,7 +42,7 @@
     "no-else-return": "error",
     "require-atomic-updates": "error",
     "dot-notation": "off",
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": 0,
     // "semi": ["error", "always"],
     "semi": "off",
     "@typescript-eslint/semi": "warn",
