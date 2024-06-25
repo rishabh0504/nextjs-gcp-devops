@@ -1,0 +1,23 @@
+on:
+  pull_request:
+    branches: ["main"]
+
+# on:
+#   pull_request:
+#     branches: [develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    #Node v16.18.0 installed in selfhosted runner with below link
+    #curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - &&sudo apt-get install -y nodejs
+
+    steps:
+      - name: PR Check
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: yarn install
+      - name: Typecheck
+        run: yarn typecheck
+      - name: Build
+        run: yarn build
