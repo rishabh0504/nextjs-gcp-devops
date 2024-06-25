@@ -7,5 +7,6 @@
   "htmlWhitespaceSensitivity": "strict",
   "trailingComma": "none",
   "jsxBracketSameLine": false,
-  "printWidth": 120
+  "printWidth": 120,
+  "endOfLine": "crlf"
 }
