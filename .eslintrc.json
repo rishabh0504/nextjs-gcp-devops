@@ -36,7 +36,7 @@
     ],
     "strict": "off",
     "padded-blocks": "off",
-    "comma-dangle": ["never"],
+    "comma-dangle": [2],
     "no-param-reassign": "off",
     "arrow-body-style": "off",
     "no-else-return": "error",
